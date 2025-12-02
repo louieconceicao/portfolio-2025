@@ -21,82 +21,109 @@
     <!-- Hero Section -->
     <section class="max-w-5xl mx-auto px-6 lg:px-0 py-12">
         <p class="text-xs uppercase tracking-wide text-neutral-500 mb-3">Sales Operations, Workflow Design</p>
-        <h1 class="text-4xl lg:text-5xl font-light mb-6">Salesforce CPQ Maintenance & Workflow</h1>
+        <h1 class="text-4xl lg:text-5xl font-light mb-6">Salesforce CPQ Workflow Evolution</h1>
         <p class="text-lg text-neutral-700 leading-relaxed max-w-3xl">
-            Salesforce CPQ had been implemented by another team, but the quoting, contract, and renewal workflows required ongoing maintenance 
-            and integration improvements. I worked to ensure the system ran smoothly, incorporating Conga Contracts for approvals and automating renewals, 
-            while optimizing templates and workflows for the sales team.
+            How an inherited Salesforce CPQ implementation was stabilized, streamlined, and expanded into a reliable quoting and contracting workflow. This was not a full re-implementation, but a systematic refinement of quoting, contract, and renewal processes to reduce manual effort, improve accuracy, and support scalable sales operations.
         </p>
 
         <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-neutral-600">
             <div><span class="font-semibold text-neutral-900">Role</span><br>Salesforce CPQ Maintenance & Workflow Lead</div>
             <div><span class="font-semibold text-neutral-900">Timeline</span><br>Ongoing</div>
-            <div><span class="font-semibold text-neutral-900">Platform</span><br>Salesforce CPQ, Conga</div>
-            <div><span class="font-semibold text-neutral-900">Deliverables</span><br>Workflow Mapping, Templates, Integration, Training</div>
+            <div><span class="font-semibold text-neutral-900">Platform</span><br>
+            Salesforce CPQ, Salesforce Contracts, Conga</div>
+            <div><span class="font-semibold text-neutral-900">Deliverables</span><br>Workflow Mapping, Template Optimization, Integrations, Training</div>
         </div>
     </section>
 
-    <!-- Problem Section -->
+	<!-- Backgroup Section -->
     <section class="max-w-5xl mx-auto px-6 lg:px-0 py-16 border-t border-neutral-200">
+        <h2 class="text-2xl font-semibold mb-4">The Background</h2>
+        <p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">
+            The organization had launched Salesforce CPQ through an external team, but as the business evolved, gaps began to appear. Multi-year term rules varied, approvals were handled manually, and renewal workflows weren’t automated.<br>
+<br>
+
+
+Sales reps relied heavily on Slack messages, emails, and workarounds to get quotes approved and contracts prepared, which introduced delays and inconsistencies.</p>
+		
+</section>
+	
+    <!-- Challenge Section -->
+<section class="max-w-5xl mx-auto px-6 lg:px-0 py-16 border-t border-neutral-200">
         <h2 class="text-2xl font-semibold mb-4">The Challenge</h2>
         <p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">
-            Although CPQ was already in place, multi-year contracts and approval workflows were inconsistent, manual touchpoints remained, 
-            and renewals weren’t automated. Sales teams needed predictable, reliable workflows to reduce errors and accelerate quoting.
+		CPQ was technically live, but not operationally optimized. Key Issues included:</p>
+<ul class="list-disc ml-6 text-neutral-700 leading-relaxed max-w-3xl mb-6">
+	<li>Inconsistent <strong>multi-year pricing</strong> and discount structures</li>
+            <li><strong>Approval flows managed manually</strong> through Slack, email, or spreadsheets</li>
+	<li><strong>Renewals that weren't automatically generated</strong>, required Sales Ops cleanup</li>
+            <li><strong>No formal contact generation tool</strong>, leading to inconsistent documents</li>
+			<li><strong>Limited workflow visibility</strong>, making it difficult to track where deals stalled</li>
+  </ul>
+		<div class="w-full h-64 bg-neutral-200 rounded-xl flex items-center justify-center text-neutral-500 text-sm">
+        <img src="assets/img/salesforce-cpq-basic.jpg" width="1024" height="256" alt=""/> </div>
         </p>
-
-        <div class="w-full h-64 bg-neutral-200 rounded-xl flex items-center justify-center text-neutral-500 text-sm">
-            Placeholder Image / Existing CPQ Workflow
-        </div>
-    </section>
+	<p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">Teams spent unnecessary time reconciling data and clarifying steps instead of moving deals forward.</p>
+	
+</section>
 
     <!-- Approach Section -->
     <section class="max-w-5xl mx-auto px-6 lg:px-0 py-16 border-t border-neutral-200">
         <h2 class="text-2xl font-semibold mb-4">My Approach</h2>
+		<h3 class="text-xl font-medium mb-3">01 - Diagnose & Map the Existing Workflow</h3>
+      <p class="text-neutral-700 leading-relaxed max-w-3xl mb-6"> I documented the full quote-to-contract process, including all rep touchpoints, approvals, handoffs, and renewal triggers.</p>
+        <p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">          This surfaced misaligned logic, unclear ownership, and places where configuration didn’t support real workflows.</p>
+		
+		<h3 class="text-xl font-medium mb-3">02 - Standardizing Quoting &amp; Term Logic </h3>
         <p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">
-            I mapped the existing quote-to-cash workflows to identify inefficiencies and inconsistencies. I maintained and optimized Salesforce CPQ, 
-            integrated Conga Contracts for approvals, and configured Salesforce Contracts to automate renewals.
-        </p>
+      I stabilized CPQ by:</p>
+<ul class="list-disc ml-6 text-neutral-700 leading-relaxed max-w-3xl mb-6">
+            <li>Standardized <strong>multi-year pricing rules</strong></li>
+            <li>Aligned <strong>bundle components</strong> with Finance expectations</li>
+            <li>Added guardrails to prevent invalid configurations</li>
+            <li>Giving reps a predictable, repeatable quoting sequence</li>
+      </ul>
+		<p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">These improvements reduced the number of exceptions and approval escalations.</p>
+<h3 class="text-xl font-medium mb-3">03 - Introducing Structured Approvals &amp; Contract Generation</h3>
         <p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">
-            I also optimized quote templates, documented workflows, and trained the global sales team to ensure adoption and smooth execution.
-        </p>
-
+      To eliminate the manual approval and contract creation gaps:</p>
+<ul class="list-disc ml-6 text-neutral-700 leading-relaxed max-w-3xl mb-6">
+            <li>I <strong>designed and documented</strong> the approval routing logic (discount, product, term–based)</li>
+            <li>I partnered with a <strong>third-party integrator</strong> who performed the <strong>Conga Contracts development</strong></li>
+            <li>I provided functional requirements, field mappings, and workflow diagrams</li>
+            <li>I validated the templates and ensured they aligned with CPQ pricing and product logic</li>
+      </ul>
+		<p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">This introduced predictable approval paths and consistent contract output.</p>
         <div class="w-full h-64 bg-neutral-200 rounded-xl flex items-center justify-center text-neutral-500 text-sm mb-6">
-            Placeholder Image / CPQ Workflow Mapping
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section class="max-w-5xl mx-auto px-6 lg:px-0 py-16 border-t border-neutral-200">
-        <h2 class="text-2xl font-semibold mb-4">The Solution</h2>
-        <ul class="list-disc ml-6 text-neutral-700 leading-relaxed max-w-3xl mb-6">
-            <li>Maintained Salesforce CPQ workflows and templates</li>
-            <li>Integrated Conga Contracts for approval and generation</li>
-            <li>Automated renewal processes using Salesforce Contracts</li>
-            <li>Documented workflows and trained the global sales team</li>
-            <li>Improved efficiency and reduced errors across quoting and contracting</li>
+         <img src="assets/img/salesforce-cpq-conga.jpg" width="1024" height="256" alt=""/></div>
+	
+	<h3 class="text-xl font-medium mb-3">04 - Automating Renewals</h3>
+        <p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">
+      I worked across Sales Ops and Rev Ops to ensure:</p>
+<ul class="list-disc ml-6 text-neutral-700 leading-relaxed max-w-3xl mb-6">
+            <li>Automatic renewal opportunities were created</li>
+            <li>Terms and quantities rolled over accurately</li>
+            <li>Amendments followed a consistent path</li>
+            <li>Reps no longer had to manually create or correct renewal data</li>
         </ul>
-
-        <div class="w-full h-64 bg-neutral-200 rounded-xl flex items-center justify-center text-neutral-500 text-sm">
-            Placeholder Image / CPQ & Conga Integration
-        </div>
-    </section>
-
-    <!-- Outcome Section -->
-    <section class="max-w-5xl mx-auto px-6 lg:px-0 py-16 border-t border-neutral-200">
-        <h2 class="text-2xl font-semibold mb-4">The Outcome</h2>
-        <p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">
-            Quote generation became more predictable, approvals were automated through Conga Contracts, and renewals were streamlined. 
-            Sales teams had confidence in the system, pricing errors dropped, and workflow documentation improved adoption.
-        </p>
-
+		<p class="text-neutral-700 leading-relaxed max-w-3xl mb-6">This increased renewal predictability and reduced Ops overhead.</p>
         <div class="w-full h-64 bg-neutral-200 rounded-xl flex items-center justify-center text-neutral-500 text-sm mb-6">
-            Placeholder Image / Workflow Automation Metrics
-        </div>
-
-        <p class="text-neutral-700 leading-relaxed max-w-3xl italic">
-            Maintaining and enhancing the CPQ system ensured a reliable, integrated quote-to-cash workflow across Salesforce, Conga, and renewal processes.
-        </p>
+         <img src="assets/img/full-tech-stack.jpg" width="1024" height="256" alt=""/></div>
+		
     </section>
+
+	
+    <!-- Impact Section -->
+    <section class="max-w-5xl mx-auto px-6 lg:px-0 py-16 border-t border-neutral-200">
+        <h2 class="text-2xl font-semibold mb-4">The Impact</h2>
+        <ul class="list-disc ml-6 text-neutral-700 leading-relaxed max-w-3xl mb-6">
+            <li><strong>More accurate, consistent quotes</strong> across all reps</li>
+            <li><strong>Reduced manual approvals</strong> and faster deal turnaround</li>
+            <li><strong>Standardized contract generation</strong>, reducing Legal feedback loops</li>
+            <li><strong>Predictable renewals</strong> driven by automation, not manual entry</li>
+            <li>A workflow foundation that future teams can continue to scale</li>
+        </ul>
+	  <p class="text-neutral-700 leading-relaxed max-w-3xl mb-6"><em>This was not a ground-up rebuild, it was a targeted, thoughtful evolution that brought structure to a system the business had already invested in, improving reliability without slowing delivery.</em></p>
+</section>
 
 </body>
 </html>
